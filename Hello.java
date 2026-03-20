@@ -19,3 +19,17 @@
 //   }
 // }
 
+// 文字列データを受け取る
+// 文字列データの連結
+// 入力された文字列を出力する
+import java.util.*; // データを受け取るためのクラスをインポート
+
+public class Hello {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        String text = scan.next(); // next()は、入力したデータを文字列として受け取る
+        System.out.println("hello " + text);
+    }
+}
+
+
