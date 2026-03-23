@@ -34,15 +34,32 @@
 
 
 // 整数を受け取る
+// import java.util.*;
+
+// public class Hello {
+//     public static void main(String[] args) {
+//         Scanner scan = new Scanner(System.in);
+//         String text = scan.next();
+//         System.out.println(text);
+//         int number = scan.nextInt();
+//         System.out.println(number * 10);
+//         System.out.println("お小遣い" + number + "円");
+//     }
+// }
+
+// 条件に一致したら処理をする
 import java.util.*;
 
 public class Hello {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        String text = scan.next();
-        System.out.println(text);
         int number = scan.nextInt();
-        System.out.println(number * 10);
-        System.out.println("お小遣い" + number + "円");
+        if (number > 10) {
+            System.out.println("10より大きい");
+        } else if (number == 10) {
+            System.out.println("10と同じ");
+        } else {
+            System.out.println("10より小さい");
+        }
     }
 }
