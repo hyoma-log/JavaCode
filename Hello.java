@@ -22,14 +22,27 @@
 // 文字列データを受け取る
 // 文字列データの連結
 // 入力された文字列を出力する
-import java.util.*; // データを受け取るためのクラスをインポート
+// import java.util.*; // データを受け取るためのクラスをインポート
+
+// public class Hello {
+//     public static void main(String[] args) {
+//         Scanner scan = new Scanner(System.in);
+//         String text = scan.next(); // next()は、入力したデータを文字列として受け取る
+//         System.out.println("hello " + text);
+//     }
+// }
+
+
+// 整数を受け取る
+import java.util.*;
 
 public class Hello {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        String text = scan.next(); // next()は、入力したデータを文字列として受け取る
-        System.out.println("hello " + text);
+        String text = scan.next();
+        System.out.println(text);
+        int number = scan.nextInt();
+        System.out.println(number * 10);
+        System.out.println("お小遣い" + number + "円");
     }
 }
-
-
