@@ -48,18 +48,33 @@
 // }
 
 // 条件に一致したら処理をする
+// import java.util.*;
+
+// public class Hello {
+//     public static void main(String[] args) {
+//         Scanner scan = new Scanner(System.in);
+//         int number = scan.nextInt();
+//         if (number > 10) {
+//             System.out.println("10より大きい");
+//         } else if (number == 10) {
+//             System.out.println("10と同じ");
+//         } else {
+//             System.out.println("10より小さい");
+//         }
+//     }
+// }
+
+// 条件に合わせて処理を変える
 import java.util.*;
 
 public class Hello {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int number = scan.nextInt();
-        if (number > 10) {
-            System.out.println("10より大きい");
-        } else if (number == 10) {
-            System.out.println("10と同じ");
+        if (number % 2 == 0) {
+            System.out.println("偶数");
         } else {
-            System.out.println("10より小さい");
+            System.out.println("奇数");
         }
     }
 }
