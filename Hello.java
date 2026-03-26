@@ -65,16 +65,30 @@
 // }
 
 // 条件に合わせて処理を変える
+// import java.util.*;
+
+// public class Hello {
+//     public static void main(String[] args) {
+//         Scanner scan = new Scanner(System.in);
+//         int number = scan.nextInt();
+//         if (number % 2 == 0) {
+//             System.out.println("偶数");
+//         } else {
+//             System.out.println("奇数");
+//         }
+//     }
+// }
+
+// 文字列の一致を判定させる
 import java.util.*;
 
 public class Hello {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        int number = scan.nextInt();
-        if (number % 2 == 0) {
-            System.out.println("偶数");
-        } else {
-            System.out.println("奇数");
+        String greeting = scan.next();
+
+        if (greeting.equals("Hello")) {
+            System.out.println("こんにちは");
         }
     }
 }
