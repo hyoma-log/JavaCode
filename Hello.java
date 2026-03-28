@@ -80,15 +80,40 @@
 // }
 
 // 文字列の一致を判定させる
-import java.util.*;
+// import java.util.*;
 
+// public class Hello {
+//     public static void main(String[] args) {
+//         Scanner scan = new Scanner(System.in);
+//         String greeting = scan.next();
+
+//         if (greeting.equals("Hello")) {
+//             System.out.println("こんにちは");
+//         }
+//     }
+// }
+
+// 同じ処理を繰り返す
 public class Hello {
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-        String greeting = scan.next();
+        String greeting = "Hello paiza";
 
-        if (greeting.equals("Hello")) {
-            System.out.println("こんにちは");
+        for (int i = 0; i < 5; i++) {
+            System.out.println(greeting);
         }
     }
 }
+
+// 複数のデータを受け取る
+public class Hello {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int greetings = scan.nextInt();
+
+        for (int i = 0; i < greetings; i++) {
+            System.out.println("Hello paiza");
+        }
+    }
+}
+
+
